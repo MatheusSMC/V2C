@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(fonts/barlow-regular.ttf) format("truetype");
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1520px;
+    margin: 0 auto;
+    
+}
+
+.conteudo {
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.menu .img_logo {
+    width: 20%;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+
+
+
+.menu a img {
+    width: 100%; 
+    cursor: pointer;
+}
+
+.menu a {
+    font-family: barlow, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-left: 35px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 60px;
+}
+
+.dropdownbtn {
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #333333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* background-color: white; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    display: grid;
+    place-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    animation: slider 15s ease infinite;
+    box-shadow: 8px 8px 15px black;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(./Banner/V2C_BannerTopo.jpg);
+    }
+
+    30% {
+        background-image: url(./Banner/V2C_BannerTopo-02_1.png);
+    }
+
+    70% {
+        background-image: url(./Banner/V2C_BannerTopo-03.png);
+    }
+
+    100% {
+        background-image: url(./Banner/V2C_BannerTopo.jpg);
+    }
+}
+/*
+.bolinhas input {
+    display: none;
+}
+
+.bolinhas label {
+    background-color: #fff;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.bolinhas li:nth-child(1) label {
+    left 10px;
+}
+
+.bolinhas li:nth-child(2) label {
+    left 40px;
+}
+
+.bolinhas li:nth-child(3) label {
+    left 70px;
+}
+*/
+
+
+body {
+    font-family: barlow, sans-serif;
+    overflow-x: hidden;
+}
+
+
+#produtos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px; 
+}
+
+#produtos h1 {
+    color:black;
+}
+
+
+#produtos img {
+    width: 600px;
+    height: 500px;
+    padding-left: 80px;
+    padding-right: 120px;
+    padding-top: 60px;
+    padding-bottom: 20px; 
+} 
+
+#produtos #first {
+    padding-left: 180px;
+}
+
+#produtos #second {
+    padding-left: 180px;
+} 
+
+.servicos {
+    background-color: black;
+    width: 1520px;
+    height: 750px;
+    padding-left: 60px;
+}
+
+.servicos img {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    height: 550px;
+   
+}
+
+h1 {
+    color: orangered;
+    width: 1400px;
+    height: 150px;
+    font-size: 60px;
+    display: grid;
+    place-items: center
+}
+
+#sobre {
+    display: flex;
+    width: 45%;
+}
+
+#sobre_img {
+    width: 45%;
+}
+
+#sobre_textos {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#sobre_textos p {
+    width: 45%;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 480px;
+}
+
+#sobre_textos h1 {
+    margin-left: 120px;
+    font-size: 90px;
+}
+
+.contato {
+    width: 1520px;
+    height: 580px;
+    font-size: 26px;
+    background-color: #eceae6;
+}
+
+.contato .tag {
+    display: flex;
+    padding-left: 125px;
+}
+
+.contato label {
+    margin-right: 530px;
+    color: gray;
+}
+
+.contato .dados {
+    display: flex;
+    padding-left: 120px;
+}
+
+.contato input {
+    width: 500px;
+    height: 42px;
+   border-radius: 10px;
+   margin-right: 100px;
+   margin-bottom: 25px;
+}
+
+.contato .tag2 {
+    margin-left: 125px;
+}
+
+.contato #maior {
+    width: 1100px;
+    height: 150px;
+    margin-left: 125px;
+}
+
+.contato .enviar input {
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f34f3c;
+    border-color: #f34f3c;
+    border-width: 2,5px;
+    margin-left: 125px;
+    
+}
+
+.informacoes {
+    background-color: #f34f3c;
+    width: 1520px;
+    height: 400px;
+    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.informacoes ul li{
+    list-style-type: none;
+    padding-top: 15px;
+    padding-right: 140px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+}
+
+.informacoes ul .endereco {
+    list-style-image: url(./Icones/V2C_LayoutSite2-21.png);
+    list-style-position: inside;
+    align-content: center;
+}
+
+.informacoes ul .numero {
+    list-style-image: url(./Icones/V2C_LayoutSite2-18.png);
+    list-style-position: inside;
+}
+
+.informacoes ul .email {
+    list-style-image: url(./Icones/V2C_LayoutSite2-22.png);
+    list-style-position: inside;
+}
+
+.informacoes ul .insta {
+    list-style-image: url(./Icones/V2C_LayoutSite2-20.png);
+    list-style-position: inside;
+}
+
+.informacoes ul .linkedin {
+    list-style-image: url(./Icones/V2C_LayoutSite2-19.png);
+    list-style-position: inside;
+}
+
+.informacoes img {
+    margin-left: 110px;
+}
+
+.fim {
+    background-color: #333333;
+    width: 1520px;
+    height: 30px;
+    color: white;
+    display: grid;
+    place-items: center
+}
+
+/* -------------------------------------------------------------------- */
+
+/* NOTEBOOK */
+@media screen and (max-width: 1280px) {
+   .menu {
+    max-width: 1280px;
+   }
+
+   .menu a {
+    font-size: 15px;
+   }
+
+   #produtos {
+    width: 1280px;
+   }
+
+   #produtos #first {
+    padding-left: 120px;
+}
+
+#produtos #second {
+    padding-left: 120px;
+} 
+
+
+   h1 {
+    font-size: 50px;
+    width: 1280px;
+   }
+
+   #produtos img {
+    width: 500px;
+    height: 450px;
+    padding-left: 10px;
+    padding-right: 60px;}
+
+    .servicos {
+        width: 1280px;
+        height: 650px;
+        padding-left: 30px;
+    }
+
+    .servicos img {
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 40px;
+        height: 480px;
+   
+    }
+
+#sobre {
+    display: flex;
+    width: 45%;
+}
+
+#sobre_img {
+    width: 30%;
+}
+
+#sobre_textos {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#sobre_textos p {
+    width: 35%;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 590px;
+}
+
+#sobre_textos h1 {
+    margin-left: 120px;
+    font-size: 90px;
+}
+
+.contato {
+    width: 1280px;
+    height: 540px;
+    font-size: 26px;
+    background-color: #eceae6;
+}
+
+.informacoes {
+    background-color: #f34f3c;
+    width: 1280px;
+    height: 380px;
+    font-size: 25px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.informacoes ul li{
+    list-style-type: none;
+    padding-top: 15px;
+    padding-right: 140px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+
+}
+
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+        
+    }
+
+    .conteudo {
+        display: flex; 
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .menu {
+    width: 800px;
+
+    }
+
+.menu .img_logo {
+    width: 25%;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+ 
+.menu a {
+    font-size: 15px;
+    margin-right: 12px;
+    margin-left: 20px;
+    
+}
+
+.slider {
+    height: 500px;
+}
+ 
+#produtos {
+    width: 800px;
+    }
+ 
+#produtos #first {
+    padding-left: 10px;
+ }
+ 
+ #produtos #second {
+     padding-left: 10px;
+ } 
+ 
+ 
+    h1 {
+     font-size: 40px;
+     width: 750px;
+    }
+ 
+    #produtos img {
+     width: 350px;
+     height: 380px;
+     padding-left: 10px;
+     padding-right: 20px;}
+ 
+     .servicos {
+         width: 800px;
+         height: 480px;
+         padding-left: 30px;
+     }
+ 
+     .servicos img {
+         padding-right: 12px;
+         padding-left: 5px;
+         padding-bottom: 40px;
+         height: 320px;
+    
+     }
+ 
+ #sobre {
+     display: flex;
+     width: 800px;
+ }
+ 
+ #sobre_img img {
+     width: 520px;
+ }
+ 
+ #sobre_textos {
+     text-align: center;
+     margin-top: 80px;
+ }
+ 
+ #sobre_textos p {
+     width: 33%;
+     font-size: 25px;
+     text-align: left;
+     margin-left: 280px;
+ }
+ 
+ #sobre_textos h1 {
+     margin-left: 25px;
+     font-size: 38px;
+ }
+ 
+ .contato {
+     width: 800px;
+     height: 490px;
+     font-size: 26px;
+     background-color: #eceae6;
+ }
+
+ .contato label {
+    margin-right: 270px;
+}
+
+.contato #maior {
+    width: 580px;
+    height: 110px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+
+ 
+ .informacoes {
+     background-color: #f34f3c;
+     width: 800px;
+     height: 280px;
+     font-size: 16px;
+     display: flex;
+     flex-flow: row wrap;
+ }
+ 
+ .informacoes ul li{
+     list-style-type: none;
+     padding-top: 20px;
+     padding-right: 70px;
+     padding-left: 80px;
+     padding-bottom: 14px;
+ 
+ }
+
+ #informacoes {
+    height: 40px;
+    margin-left: 77px;
+ }
+ 
+ }
+
+ /* -------------------------------------------------------------------- */
+
+/* Celular */
+@media screen and (max-width: 390px) {
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        display: flex; 
+        flex-wrap: wrap;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .menu {
+    width: 390px;
+
+    }
+
+.menu .img_logo {
+    width: 80px;
+    padding-top: 30px;
+    padding-left: 8px;
+    padding-right: 22px;
+    padding-bottom: 30px;
+}
+
+.menu a {
+    font-size: 8px;
+    margin-right: 4px;
+    margin-left: 5px;
+    margin-bottom: 35px;
+    
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 52px;
+}
+
+.slider {
+    width: 390px;
+    height: 250px;
+}
+ 
+#produtos {
+    width: 390px;
+    }
+ 
+#produtos #first {
+    padding-left: 0.5px;
+ }
+ 
+ #produtos #second {
+     padding-left: 0.5px;
+ } 
+ 
+ 
+    h1 {
+     font-size: 30px;
+     width: 315px;
+    }
+ 
+    #produtos img {
+     width: 172px;
+     height: 195px;
+     padding-top: 5px;
+     padding-left: 0.5px;
+     padding-right: 30px;}
+ 
+     .servicos {
+         width: 390px;
+         height: 300px;
+         padding-left: 30px;
+     }
+
+     .servicos h1 {
+        margin-left: 10px;
+     }
+ 
+     .servicos img {
+         padding-right: 1px;
+         padding-left: 2px;
+         padding-bottom: 40px;
+         height: 170px;
+     }
+
+ 
+ #sobre {
+    display: flex;
+     width: 390px;
+     height: 340px;
+ }
+ 
+ #sobre_img img {
+     width: 240px;
+     margin-top: 80px;
+ }
+
+ #sobre_textos {
+    text-align: center;
+    margin-top: 5px;
+}
+ 
+ #sobre_textos p {
+     width: 42%;
+     font-size: 13px;
+     text-align: left;
+     margin-top: 2px;
+     margin-left: 130px;
+ }
+ 
+ #sobre_textos h1 {
+     margin-left: 0.5px;
+     font-size: 29px;
+ }
+
+ .contato {
+     width: 390px;
+     height: 400px;
+     font-size: 16px;
+     background-color: #eceae6;
+ }
+
+ .contato h1 {
+    margin-left: 25px
+ }
+
+ .contato .tag {
+    padding-left: 25px;
+}
+
+ .contato label {
+    margin-right: 140px;
+}
+
+.contato .dados {
+    display: flex;
+    padding-left: 20px;
+}
+
+.contato input {
+    width: 400px;
+    height: 42px;
+   border-radius: 10px;
+   margin-right: 22px;
+   margin-bottom: 25px;
+}
+
+.contato .tag2 {
+    margin-left: 18px;
+}
+
+.contato #maior {
+    width: 360px;
+    height: 80px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.contato .enviar input {
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f34f3c;
+    border-color: #f34f3c;
+    border-width: 2,5px;
+    margin-left: 16px;
+    
+}
+ 
+ .informacoes {
+     background-color: #f34f3c;
+     width: 390px;
+     height: 280px;
+     font-size: 10px;
+     display: flex;
+     flex-flow: row wrap;
+ }
+ 
+ .informacoes ul li{
+     list-style-type: none;
+     padding-top: 20px;
+     padding-right: 11px;
+     padding-left: 11px;
+     padding-bottom: 6px;
+     
+ }
+
+#informacoes {
+    height: 25px;
+    margin-left: 12px;
+}
+}

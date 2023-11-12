@@ -339,10 +339,17 @@ h1 {
     place-items: center
 }
 
+@media screen and (max-width: 780px) {
+    .container {
+    width: 100%;
+    flex-direction: column;
+    }
+}
+
 /* -------------------------------------------------------------------- */
 
 /* NOTEBOOK */
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
    .menu {
     max-width: 1280px;
    }
@@ -464,7 +471,7 @@ h1 {
     }
 
     .menu {
-    width: 800px;
+    width: 100%;
 
     }
 
@@ -484,6 +491,7 @@ h1 {
 }
 
 .slider {
+    max-width: 100%;
     height: 500px;
 }
  
@@ -597,8 +605,8 @@ h1 {
 
  /* -------------------------------------------------------------------- */
 
-/* Celular */
-@media screen and (max-width: 390px) {
+/* Celular*/
+@media (max-width: 390px) {
 
     .center {
         display: flex;
@@ -793,5 +801,231 @@ h1 {
 #informacoes {
     height: 25px;
     margin-left: 12px;
+}
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Celular*/
+@media (max-width: 320px) {
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        display: flex; 
+        flex-wrap: wrap;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .menu {
+    width: 100%;
+    height: 80px;
+    }
+
+.menu .img_logo {
+    width: 100px;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.menu a {
+    font-size: 7px;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+}
+
+.slider {
+    width: 100%;
+    height: 250px;
+}
+ 
+#produtos {
+    width: 100%;
+    height: 100%;
+    }
+ 
+#produtos #first {
+    padding-left: 0.5px;
+ }
+ 
+ #produtos #second {
+     padding-left: 0.5px;
+ } 
+ 
+ 
+    h1 {
+     font-size: 25px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+    }
+ 
+    #produtos img {
+        width: 130px;
+        height: 150px;
+        padding-top: 5px;
+        padding-left: 0.5px;
+        padding-right: 30px;}
+ 
+     .servicos {
+         width: 100%;
+         height: 280px;
+         padding-left: 5%;
+     }
+
+     .servicos h1 {
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+     }
+ 
+     .servicos img {
+         padding-right: 1px;
+         padding-left: 2px;
+         padding-bottom: 40px;
+         height: 150px;
+     }
+
+ 
+ #sobre {
+    display: flex;
+     width: 100%;
+     width: ;
+     height: 320px;
+ }
+ 
+ #sobre_img img {
+     width: 211px;
+     margin-top: 80px;
+ }
+
+ #sobre_textos {
+    text-align: right;
+    margin: 0;
+}
+ 
+ #sobre_textos p {
+    max-width: 320px;
+     width: 50%;
+     font-size: 11.2px;
+     text-align: left;
+     margin-top: 0;
+     margin-left: 51%;
+ }
+ 
+ #sobre_textos h1 {
+    display: flex;
+    align-content: right;
+    justify-content: right;
+     margin: 0;
+     font-size: 28px;
+ }
+
+ .contato {
+     width: 100%;
+     height: 400px;
+     font-size: 16px;
+     background-color: #eceae6;
+ }
+
+ .contato h1 {
+    margin-left: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ }
+
+ .contato .tag {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 95px;
+}
+
+ .contato label {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+}
+
+.contato .dados {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+}
+
+.contato input {
+    width: 120px;
+    height: 30px;
+   border-radius: 10px;
+   margin-right: 22px;
+   margin-bottom: 25px;
+}
+
+.contato .tag2 {
+    margin-left: 18px;
+}
+
+.contato #maior {
+    width: 280px;
+    height: 80px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.contato .enviar input {
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f34f3c;
+    border-color: #f34f3c;
+    border-width: 2,5px;
+    margin-left: 16px;
+    
+}
+ 
+ .informacoes {
+     background-color: #f34f3c;
+     width: 320px;
+     height: 200px;
+     font-size: 10px;
+     display: flex;
+     flex-flow: row wrap;
+     padding-top: 5%;
+ }
+ 
+ .informacoes ul li{
+     list-style-type: none;
+     padding: 0;
+     padding-top: 10%;
+ }
+
+#informacoes {
+    height: 20px;
+    margin-left: 1px;
+    margin-top: 10%;
+}
+.fim {
+    font-size: 10px;
 }
 }
